@@ -1,0 +1,48 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+  border: 2px dashed var(--primary);
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.message {
+  border: 1px solid var(--secondary);
+  padding: 0.5rem;
+}
+
+.countryContainer {
+  padding: 1rem;
+}
+
+.inputWrapper {
+  padding: 0.5rem;
+  display: flex;
+}
+
+.inputWrapper label {
+  flex: 1 0 4rem;
+}
+
+.inputWrapper input {
+  flex: 1 0 10rem;
+}
+
+.itemListWrapper {
+  width: 300px;
+}
+
+.itemListItem {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem
+}
+
+.itemListItem span {
+  flex: 0 0 4rem
+}
