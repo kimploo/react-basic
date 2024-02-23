@@ -1,11 +1,12 @@
 import { useState } from "react";
-import Page1 from "./page/1-JSX-기초";
-import Page2 from "./page/2-JSX-map";
-import Page3 from "./page/3-useState"
+import Page1 from "./page/1-JSX-기초-reference";
+import Page2 from "./page/2-JSX-map-reference";
+import Page3 from "./page/3-useState-reference";
+import Page4 from "./page/4-props-reference";
 import s from "./Layout.module.css";
 
 export default function Layout() {
-  const pages = [Page1, Page2, Page3];
+  const pages = [Page1, Page2, Page3, Page4];
   const [idx, setIdx] = useState(0);
   const handlePrev = () => {
     if (idx < 1) return;
