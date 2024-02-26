@@ -5,7 +5,17 @@ import { fruits } from "../sampleData.mjs";
 
 // React 컴포넌트도 HTML 엘리먼트처럼 위계 질서가 있다.
 // 부모 - 자식 요소, 조상 - 후손 요소 들어봤으면 비슷하다.
+// 아래와 같이 JSDoc을 적어주면 다른 개발자가 보기 편하다. 나중에 TypeScript를 쓰면 간소화 할 수 있다.
 
+/**
+ * ChildComponent 함수는 목록 항목을 렌더링하는 리액트 함수형 컴포넌트입니다.
+ * 
+ * @param {Object} props - 이 컴포넌트에 전달되는 props 객체입니다.
+ * @param {string} props.name - 렌더링할 항목의 이름입니다.
+ * @param {string} props.color - 항목의 색상을 나타내는 문자열입니다.
+ * @param {number|string} props.price - 항목의 가격을 나타내는 숫자 또는 숫자 형태의 문자열입니다.
+ * @returns {JSX.Element} li 요소로 구성된 JSX를 반환합니다. 이 요소는 이름, 색상, 그리고 가격 정보를 포함합니다.
+ */
 function ChildComponent(props) {
   const { price } = props;
 
