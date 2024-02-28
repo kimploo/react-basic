@@ -36,7 +36,7 @@ function ParentComponent() {
       <span>부모 컴포넌트</span>
       <ul className={s.itemListWrapper}>
         {fruits.map((f, i) => (
-          <ChildComponent key={i + f.name} name={f.name} color={f.color} />
+          <ChildComponent key={i + f.name} name={f.name} color={f.color} price={f.price} />
         ))}
       </ul>
     </div>

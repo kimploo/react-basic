@@ -47,3 +47,25 @@
 .itemListItem span {
   flex: 0 0 4rem
 }
+
+.reduxContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.reduxRow {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.counterRow {
+  flex-direction: row;
+  padding: 0.5rem;
+}
+
+.counterRow button {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
